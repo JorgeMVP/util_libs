@@ -14,6 +14,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <utils/list.h>
+#include <utils/attribute.h>
 
 typedef struct list_node node_t;
 
@@ -141,7 +142,7 @@ int list_remove_all(list_t *l)
     return 0;
 }
 
-int list_destroy(list_t *l)
+int list_destroy(UNUSED list_t *l)
 {
     /* Nothing required. */
     return 0;
